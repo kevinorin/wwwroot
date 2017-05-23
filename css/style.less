@@ -1,3 +1,6 @@
+@import "_variables.less";
+
+
 @font-face {
 	font-family: 'HelveticaNeueLt';
 	src: url('../fonts/HelveticaNeueLt.eot');
@@ -135,17 +138,17 @@ header {
 		padding: 0;
 		margin: 100px 0 30px 0;
 		font-size: 140px;
-		color: #353535;
+		color: @mdblack;
 		text-transform: uppercase;
 		span {
-			color: #ffae29;
+			color: @orange;
 		}
 	}
 	p {
 		padding: 0;
 		margin: 0;
 		font-size: 35px;
-		color: #000000;
+		color: @black;
 	}
 }
 section {
@@ -171,12 +174,12 @@ section {
 		float: left;
 		padding: 10px;
 		margin: 0;
-		background: #f9b328;
+		background: @ltorange;
 		h2 {
 			padding: 0;
 			margin: 0;
 			font-size: 32px;
-			color: #fff;
+			color: @white;
 			text-align: center;
 			.icon {
 				width: 50px;
@@ -193,25 +196,25 @@ section {
 			padding: 0;
 			margin: 25px 0 15px 0;
 			font-size: 28px;
-			color: #fff;
+			color: @white;
 			display: none;
 		}
 		p {
 			padding: 0;
 			margin: 0;
 			font-size: 20px;
-			color: #fff;
+			color: @white;
 			display: none;
 		}
 	}
 	.block.sky {
-		background: #4abbfb;
+		background: @ltblue;
 	}
 	.block.gray {
-		background: #9f9f9f;
+		background: @grey;
 	}
 	.block.blue {
-		background: #0055ff;
+		background: @blue;
 	}
 }
 .banner--clone {
@@ -244,7 +247,7 @@ section {
 	float: left;
 	padding: 0;
 	margin: 150px 0 0 0;
-	background: #f3f3f3;
+	background: @ltgrey;
 	.row {
 		margin: 0 0;
 	}
@@ -264,12 +267,12 @@ section {
 		float: left;
 		padding: 15px 0;
 		margin: 0;
-		background: #f9b328;
+		background: @ltorange;
 		h2 {
 			padding: 0;
 			margin: 0 0 3px 0;
 			font-size: 27px;
-			color: #fff;
+			color: @white;
 		}
 		.icon {
 			width: 135px;
@@ -285,7 +288,7 @@ section {
 			padding: 0;
 			margin: 0 0 3px 0;
 			font-size: 27px;
-			color: #fff;
+			color: @white;
 			display: none;
 			font-family: 'Conv_BebasNeue';
 		}
@@ -293,7 +296,7 @@ section {
 			padding: 0;
 			margin: 0;
 			font-size: 17px;
-			color: #fff;
+			color: @white;
 			line-height: 25px;
 		}
 	}
@@ -315,13 +318,13 @@ section {
 			padding: 0;
 			margin: 0 0 8px 0;
 			font-size: 27px;
-			color: #f9ac16;
+			color: @dkorange;
 		}
 		p {
 			padding: 0;
 			margin: 0 0 20px 0;
 			font-size: 17px;
-			color: #2a2a2a;
+			color: @dkblack;
 			line-height: normal;
 		}
 		.row {
@@ -348,7 +351,7 @@ section {
 			padding: 0;
 			margin: 60px 0 0 0;
 			font-size: 18px;
-			color: #f8b429;
+			color: @mdorange;
 			text-align: right;
 			font-weight: bold;
 			i {
@@ -357,7 +360,7 @@ section {
 				color: #b8b8b8;
 			}
 			a {
-				color: #f8b429;
+				color: @mdorange;
 				&:hover {
 					opacity: 0.5;
 					i {
@@ -390,7 +393,7 @@ section {
 			padding: 0;
 			margin: 0 0 8px 0;
 			font-size: 27px;
-			color: #f9ac16;
+			color: @dkorange;
 			position: absolute;
 			left: 50px;
 			top: 35px;
@@ -414,7 +417,7 @@ section {
 				position: absolute;
 				pointer-events: none;
 				border-color: rgba(249, 179, 40, 0);
-				border-top-color: #f9b328;
+				border-top-color: @ltorange;
 				border-width: 7px;
 				margin-left: -7px;
 				display: none;
@@ -424,7 +427,7 @@ section {
 			padding: 0;
 			margin: 0 0 20px 0;
 			font-size: 15px;
-			color: #2a2a2a;
+			color: @dkblack;
 			line-height: normal;
 		}
 		.author {
@@ -434,10 +437,10 @@ section {
 			margin: 0;
 			text-align: right;
 			font-size: 14px;
-			color: #f9bc43;
+			color: @ltorange;
 			font-weight: bold;
 			span {
-				color: #313131;
+				color: @mdblack;
 			}
 		}
 	}
@@ -475,7 +478,7 @@ section {
 				padding: 0;
 				margin: 0 0 10px 0;
 				font-size: 17px;
-				color: #29b2fd;
+				color: @mdblue;
 				font-family: 'HelveticaNeueLt';
 				font-weight: bold;
 			}
@@ -483,7 +486,7 @@ section {
 				padding: 0;
 				margin: 0;
 				font-size: 16px;
-				color: #7e7e7e;
+				color: @mdgrey;
 				text-align: left;
 			}
 		}
@@ -504,7 +507,7 @@ section {
 	padding: 20px 0 0 0;
 	margin: 20px 0 0 0;
 	font-size: 17px;
-	color: #f8b429;
+	color: @mdorange;
 	text-align: center;
 	font-weight: bold;
 	border-top: 1px solid #c4c5c6;
@@ -515,7 +518,7 @@ section {
 		color: #b8b8b8;
 	}
 	a {
-		color: #f8b429;
+		color: @mdorange;
 		&:hover {
 			opacity: 0.5;
 			i {
@@ -580,19 +583,19 @@ section {
 }
 .impact_block.blue {
 	.title_info {
-		background: #0055ff;
+		background: @blue;
 	}
 	.details {
 		h3 {
-			color: #0055ff;
+			color: @blue;
 		}
 	}
 	.right_info {
 		h2 {
-			color: #0055ff;
+			color: @blue;
 		}
 		.author {
-			color: #0055ff;
+			color: @blue;
 		}
 		background: url(../images/lifelong_image_1.jpg) no-repeat center center;
 		background-size: cover;
@@ -600,7 +603,7 @@ section {
 	.image_list {
 		.read_more {
 			a {
-				color: #0055ff;
+				color: @blue;
 			}
 		}
 	}
@@ -610,9 +613,9 @@ section {
 	margin: 0;
 	font-size: 27px;
 	text-align: center;
-	color: #fff;
+	color: @white;
 	font-family: 'Conv_BebasNeue';
-	background: #f9b328;
+	background: @ltorange;
 	display: none;
 	.icon {
 		width: 50px;
@@ -634,7 +637,7 @@ section {
 	z-index: 8890;
 }
 .impact_sticky_title.blue_bg {
-	background: #0055ff;
+	background: @blue;
 	z-index: 8891;
 }
 .graph_info {
@@ -658,7 +661,7 @@ section {
 			padding: 0 0 0 100px;
 			margin: 0;
 			font-size: 30px;
-			color: #000000;
+			color: @black;
 		}
 	}
 }
@@ -678,7 +681,7 @@ section {
 			padding: 0 50px 17px 50px;
 			margin: 0;
 			font-size: 28px;
-			color: #fff;
+			color: @white;
 			background: #0073ba;
 			position: relative;
 			span {
@@ -744,7 +747,7 @@ section {
 			padding: 0;
 			margin: 0 0 10px 0;
 			font-size: 17px;
-			color: #fff;
+			color: @white;
 		}
 	}
 	.comm_read_more {
@@ -753,7 +756,7 @@ section {
 		padding: 0;
 		margin: 0;
 		font-size: 17px;
-		color: #fff;
+		color: @white;
 		font-weight: bold;
 		i {
 			padding: 0;
@@ -763,7 +766,7 @@ section {
 			top: 2px;
 		}
 		a {
-			color: #fff;
+			color: @white;
 			&:hover {
 				opacity: 0.5;
 			}
@@ -792,11 +795,11 @@ section {
 			padding: 0;
 			margin: 0;
 			font-size: 16px;
-			color: #fff;
+			color: @white;
 			font-weight: bold;
 			font-family: 'HelveticaNeueLt';
 			small {
-				color: #fff;
+				color: @white;
 			}
 		}
 	}
@@ -826,13 +829,13 @@ section {
 			right: 0;
 			top: 0;
 			bottom: 0;
-			color: #fff;
+			color: @white;
 			background: rgba(0, 0, 0, 0.2);
 			h4 {
 				padding: 0;
 				margin: 0 0 15px 0;
 				font-size: 17px;
-				color: #fff;
+				color: @white;
 				font-family: 'HelveticaNeueLt';
 				font-weight: bold;
 			}
@@ -840,7 +843,7 @@ section {
 				padding: 0;
 				margin: 0;
 				font-size: 13px;
-				color: #fff;
+				color: @white;
 				font-family: 'HelveticaNeueLt';
 				font-weight: bold;
 				opacity: 0.8;
@@ -865,16 +868,17 @@ section {
 		padding: 0;
 		margin: 60px 0 0 0;
 		text-align: center;
-		a {
+		button {
 			padding: 10px 25px;
 			margin: 0;
 			font-size: 40px;
-			color: #fff;
+			color: @white;
 			background: #0072bc;
 			display: inline-block;
+			border: none;
 			border-radius: 8px;
 			&:hover {
-				background: #252525;
+				background: @mdgrey;
 			}
 		}
 	}
@@ -974,11 +978,11 @@ ul.footer_link {
 			color: #0153ff;
 			text-align: center;
 			border: 1px solid #0153ff;
-			background: #fff;
+			background: @white;
 			border-radius: 5px;
 			&:hover {
 				background: #0153ff;
-				color: #fff;
+				color: @white;
 			}
 		}
 	}
@@ -1005,14 +1009,14 @@ ul.social_info {
 				margin: 0;
 				text-align: center;
 				font-size: 25px;
-				color: #fff;
+				color: @white;
 				line-height: 44px;
 				background: #888888;
 				border-radius: 50px;
 			}
 			&:hover {
 				i {
-					color: #fff;
+					color: @white;
 					background: #0153ff;
 				}
 			}
@@ -1046,7 +1050,7 @@ ul.social_info {
 		line-height: 18px;
 		border: 1px solid #8a8a8a;
 		&:hover {
-			color: #fff;
+			color: @white;
 			background: #8a8a8a;
 		}
 	}
@@ -1064,11 +1068,11 @@ ul.social_info {
 	}
 	.panel-default {
 		border: none;
-		>.panel-heading {
+		.panel-heading {
 			padding: 15px;
 			background: #f2f2f2;
 			border: none;
-			+ {
+			& + {
 				.panel-collapse {
 					>.panel-body {
 						border: none;
@@ -1172,7 +1176,7 @@ ul.social_info {
 			padding: 0;
 			margin: 0;
 			font-size: 20px;
-			color: #000000;
+			color: @black;
 		}
 	}
 }
