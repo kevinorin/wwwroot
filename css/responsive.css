@@ -1,3 +1,6 @@
+@media (max-width:1400px) {
+.impact_block{ margin:200px 0 0 0;}
+}
 @media (max-width:1200px) {
 .container{ width:96%; margin:0 auto; padding:0;}
 .reading_info .block h2{ font-size:20px;}
@@ -41,7 +44,7 @@ ul.social_info{ text-align:center;}
 html { -webkit-text-size-adjust:none;}
 .container{ width:93%; margin:0 auto; padding:0;}
 .top_part{ padding:80px 0 0 0; background:url(../images/top_bg_mobile.jpg) no-repeat center bottom; background-size:cover;}
-.logo{ margin-bottom:130px;}
+.logo{ margin-bottom:130px; margin-top:80px;}
 .top_info{ text-align:center;}
 .top_info h1{ font-size:60px; line-height:normal;}
 .top_info p{ font-size:21px;}
@@ -51,6 +54,7 @@ html { -webkit-text-size-adjust:none;}
 .reading_info .block h2{ font-size:30px;}
 .reading_info .block h3{ display:block;}
 .reading_info .block p{ display:block;}
+.story_sec{ margin-top:-80px;}
 .impact_block{ background:#fff; margin-top:80px;}
 .impact_block .title_info{ padding:0;}
 .impact_block .title_inner{ padding:0 20px 30px 20px;}

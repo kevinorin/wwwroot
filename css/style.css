@@ -114,7 +114,7 @@ header {
   float: left;
   padding: 80px 0 0 0;
   margin: 0;
-  background: url(../images/top_bg.jpg) no-repeat center top;
+  background: url(../images/top_bg.jpg) no-repeat center bottom;
   background-size: cover;
 }
 .logo {
@@ -160,6 +160,11 @@ section {
   padding: 0;
   margin: 0;
   background: url(../images/reading_bg.jpg) repeat-y center top;
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  -ms-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
 }
 .reading_info .row {
   margin: 0 0;
@@ -206,7 +211,7 @@ section {
   display: none;
 }
 .reading_info .block.sky {
-  background: #4abbfb;
+  background: #00aaff;
 }
 .reading_info .block.gray {
   background: #9f9f9f;
@@ -223,9 +228,6 @@ section {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
 }
 .banner--stick {
   -webkit-transform: translateY(0%);
@@ -243,7 +245,7 @@ section {
   min-height: 420px;
   float: left;
   padding: 0;
-  margin: 150px 0 0 0;
+  margin: 200px 0 0 0;
   background: #f3f3f3;
 }
 .impact_block .row {
@@ -692,6 +694,12 @@ section {
   margin: 0;
   text-align: center;
 }
+.community_sec .finacial_info .row {
+  margin: 0 -5px;
+}
+.community_sec .finacial_info [class*="col-"] {
+  padding: 0 5px;
+}
 .community_sec .finacial_info figure {
   width: 100%;
   float: left;
@@ -1111,6 +1119,7 @@ ul.social_info li a:hover i {
 .graph_info_mobile .owl-controls .owl-nav div.owl-prev {
   background: url(../images/slider_arrow_1.png) no-repeat center center;
   left: 15px;
+  display: none !important;
 }
 .graph_info_mobile .owl-controls .owl-nav div.owl-next {
   background: url(../images/slider_arrow_2.png) no-repeat center center;
@@ -1130,4 +1139,10 @@ ul.social_info li a:hover i {
   margin: 0;
   font-size: 20px;
   color: #000000;
+}
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 8888;
 }
