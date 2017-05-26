@@ -124,6 +124,9 @@ html { -webkit-text-size-adjust:none;}
 .comm_detail_2 .container-fluid{ padding:0;}
 .graph_info{ display:none;}
 .graph_info_mobile{ display:block;}
+
+.impact_block_inner{ background:#fff;}
+.impact_main_info{ padding:0;}
 }
 
 /************ iphone **************/

@@ -252,6 +252,7 @@ section {
   padding: 0;
   margin: 0;
 }
+.impact_main_info{ width:100%; float:left; padding:40px 0 0 0; margin:0; background:#fff;}
 .impact_block {
   width: 100%;
   min-height: 420px;
@@ -260,6 +261,16 @@ section {
   margin: 200px 0 0 0;
   background: #f3f3f3;
 }
+
+.impact_block_inner {
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin:0;
+  background: #f3f3f3;
+}
+
+
 .impact_block .row {
   margin: 0 0;
 }
