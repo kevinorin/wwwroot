@@ -39,6 +39,7 @@
 <section>
 <!-- Reading Info -->
 <div class="reading_info">
+    <figure class="top_sticky_image"></figure>
 	<div class="container">
     	<div class="col-lg-3 col-sm-3 col-xs-12">
         	<div class="block">
@@ -96,12 +97,12 @@
                 	<div class="title_inner">
                         <h2 class="hidden-xs"><i class="icon"><img src="images/impect_icon_1.png" alt=""></i>What we Accomplished</h2>
                         <div class="mobile_title">What we Accomplished</div>
-                        <p>In 2016 we launched Read to Kids in Delhi (India) with the generous support of Pearson to promote reading to young children.</p>
+                        <p id="impact1">In 2016 we launched Read to Kids in Delhi (India) with the generous support of Pearson to promote reading to young children.</p>
                     </div>
                 </div>
                 
                 <!-- Details -->
-                <div class="details" id="impact1">
+                <div class="details">
                     <h3>2016 Hightlight</h3>
                     <p>This holiday season, we raised over $141, 132,52 to bring books to 28,226 families through our #sharea VedruneStirt canoaugn.</p>
                     <div class="image_list">
@@ -155,13 +156,13 @@
                 	<div class="title_inner">
                     	<!--<h2 class="visible-xs"><i class="icon"><img src="images/impect_icon_2.svg" alt=""></i>  School Reading</h2>-->
                         <h2 class="hidden-xs"><i class="icon"><img src="images/impect_icon_2.png" alt=""></i>What we Accomplished</h2>
-                        <div class="mobile_title">What we Accomplished</div>
+                        <div id="impact2" class="mobile_title">What we Accomplished</div>
                         <p>In 2016 we launched Read to Kids in Delhi (India) with the generous support of Pearson to promote reading to young children.</p>
                     </div>
                 </div>
                 
                 <!-- Details -->
-                <div class="details" id="impact2">
+                <div class="details">
                     <h3>2016 Hightlight</h3>
                     <p>Two of Woridreader's key school reading projects were completed; the Tusome Early Grade Reading project and the Education Sector Support Programme. </p>
                     <div class="image_list">
@@ -230,13 +231,13 @@
                 	<div class="title_inner">
                     	<!--<h2 class="visible-xs"><i class="icon"><img src="images/impect_icon_3.svg" alt=""></i>   Library Reading</h2>-->
                         <h2 class="hidden-xs"><i class="icon"><img src="images/impect_icon_3.png" alt=""></i>What we Accomplished</h2>
-                        <div class="mobile_title">What we Accomplished</div>
+                        <div id="impact3" class="mobile_title">What we Accomplished</div>
                         <p>In 2016 we launched Read to Kids in Delhi (India) with the generous support of Pearson to promote reading to young children.</p>
                     </div>
                 </div>
                 
                 <!-- Details -->
-                <div class="details" id="impact3">
+                <div class="details">
                     <h3>2016 Hightlight</h3>
                     <p>We partnered with the Kenya National Library Service to launch our second Libraries, E-reading, Activities and Partnership (LEAP) project. The goal is to provide e-readers and training to all 61 public libraries in Kenya.</p>
                     <div class="image_list">
@@ -282,13 +283,13 @@
                 <div class="title_info">
                 	<div class="title_inner">
                         <h2 class="hidden-xs"><i class="icon"><img src="images/impect_icon_4.png" alt=""></i>What we Accomplished</h2>
-                        <div class="mobile_title">What we Accomplished</div>
+                        <div id="impact4" class="mobile_title">What we Accomplished</div>
                         <p>In 2016 we launched Read to Kids in Delhi (India) with the generous support of Pearson to promote reading to young children.</p>
                     </div>
                 </div>
                 
                 <!-- Details -->
-                <div class="details" id="impact4">
+                <div class="details">
                     <h3>2016 Hightlight</h3>
                     <p>We Launched Anasoma (she/he reads in Kiswahili), a research project that aims  to encourage more women to read using their mobile phones.</p>
                     <div class="image_list">
@@ -738,9 +739,9 @@
 	var owl = $('.owl-carousel');
       owl.owlCarousel({
         margin:0,
-        loop: true,
+        loop: false,
 		dots:true,
-		nav:true,
+		nav:false,
 		items:6,
         responsive: {
           0: {
@@ -767,10 +768,11 @@
 <script>
 var  mn = $(".reading_info");
     mns = "main-nav-scrolled";
-    hdr = $('header').height();
+    hdr = $('header').height() - 224;
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > hdr ) {
+    
+  if($(this).scrollTop() > hdr ) {
     mn.addClass(mns);
   } else {
     mn.removeClass(mns);
