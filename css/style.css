@@ -640,15 +640,15 @@ section {
 }
 .impact_sticky_title.sky_bg {
   background: #00aaff;
-  z-index: 8889;
+  /*z-index: 8889;*/
 }
 .impact_sticky_title.gray_bg {
   background: #898989;
-  z-index: 8890;
+  /*z-index: 8890;*/
 }
 .impact_sticky_title.blue_bg {
   background: #0055ff;
-  z-index: 8891;
+  /*z-index: 8891;*/
 }
 .graph_info {
   width: 100%;
@@ -1181,3 +1181,11 @@ ul.social_info li a:hover i {
   top: 0;
   z-index: 8888;
 }
+
+
+/************** 31-5-2017 **************/
+.followWrap{ height:auto !important;}
+.followMeBar { position:relative; z-index: 1;}
+.followMeBar.fixed { position: fixed; top: 0; width: 100%; box-sizing: border-box; z-index:99; }
+.followMeBar.fixed.absolute { position: absolute; }
+
