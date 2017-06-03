@@ -427,7 +427,7 @@ section {
   position: absolute;
   left: 50px;
   top: 35px;
-  z-index: 88;
+  /*z-index: 88; */
 }
 .impact_block .right_info .caption {
   width: 100%;
@@ -1184,8 +1184,28 @@ ul.social_info li a:hover i {
 
 
 /************** 31-5-2017 **************/
+/*
 .followWrap{ height:auto !important;}
 .followMeBar { position:relative; z-index: 1;}
 .followMeBar.fixed { position: fixed; top: 0; width: 100%; box-sizing: border-box; z-index:99; }
 .followMeBar.fixed.absolute { position: absolute; }
+*/
 
+.sticky {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+    /* background: #999; 
+    display: block;
+    color: #fff;
+    padding: 10px 20px;*/
+}
+
+.mobile-height{display: none;}

@@ -55,7 +55,19 @@ html { -webkit-text-size-adjust:none;}
 .reading_info .block h3{ display:block;}
 .reading_info .block p{ display:block;}
 .story_sec{ margin-top:-80px;}
-.impact_block{ background:#fff; margin-top:80px;}
+
+.impact_block{ background:#fff;  margin-top:0px; }
+.mobile-height{
+    float:left;
+    background:#fff;
+    width:100%;
+    height: 80px;
+    display: block;
+}
+#impactblock1{
+    margin-top:80px;
+}
+
 .impact_block .title_info{ padding:0;}
 .impact_block .title_inner{ padding:0 20px 30px 20px;}
 .impact_block .title_info h2{ text-align:center; margin-bottom:15px;}
